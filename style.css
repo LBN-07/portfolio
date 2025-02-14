@@ -1,0 +1,242 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar .brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .items {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbar .items ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar .items ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar .items ul li a:hover {
+    color: #000;
+}
+
+.navbar .items.show {
+    display: flex;
+}
+
+.shortcut-btn {
+    font-size: 15px;
+    padding: 9px;
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.shortcut-btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Main Content */
+.info {
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section i {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 50px;
+    color: #4CAF50;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10px;
+    word-wrap: break-word;
+    width: 100%;
+}
+.info1,.info2{
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.technical_skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.technical_skills i {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 50px;
+    color: #4CAF50;
+}
+
+.technical_skills p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10px;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 800px;
+}
+.badge {
+    background-color: #1e293b;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education i {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 50px;
+    color: #4CAF50;
+}
+
+.education p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10px;
+    word-wrap: break-word;
+    width: 100%;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+   margin-bottom: 0px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .items {
+        flex-direction: column;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .brand {
+        font-size: 20px;
+    }
+
+    .navbar .items ul li a {
+        font-size: 14px;
+    }
+
+    .shortcut-btn {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Projects</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media (max-width: 768px) {
+            .shortcut-btn {
+                display: block;
+            }
+
+            /* .items {
+                display: none;
+                flex-direction: column;
+                background: lightgreen;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            } */
+
+            .items.show {
+                display: flex;
+            }
+
+            .items ul {
+                flex-direction: column;
+            }
+
+            .items ul li {
+                margin: 10px 0;
+            }
+        }
+        @media (max-width:425px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+        /* Projects Section */
+        .projects {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects h2 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+        }
+
+        .project {
+            background: #fff;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #007bff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            color: #007bff;
+            font-size: 22px;
+        }
+
+        .project ul {
+            padding-left: 20px;
+        }
+
+        .project ul li {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="brand">Balasai <label>Lekkala</label></a>
+            <center style="align-items:center; color: black; font-size: 20px; font-weight: bolder;">
+                <h2>MY PORTFOLIO</h2>
+            </center>
+            <button class="shortcut-btn" onclick="toggleNav()">☰ Menu</button>
+            <nav class="items">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./cerficates.html">Certificates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <main>
+        <section class="projects">
+            <h2>Projects</h2>
+            
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Top-Streak Site |
+                    <a href="https://vnm-2005.github.io/saiee/" style="font-size:medium;">Visit web site</a>
+                </h3>
+                <ul>
+                    <li>Developed an engaging browser-based game, "Top-Streak," where players aim to achieve the highest score before restarting.</li>
+                    <li>Implemented game logic using JavaScript to dynamically track and display player scores.</li>
+                    <li>Designed an intuitive and user-friendly interface with HTML and CSS for enhanced player experience.</li>
+                    <li>Optimized game performance for smooth responsiveness.</li>
+                </ul>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Basic Calculator |
+                    <a href="https://lbn-07.github.io/basic-calculator/" style="font-size: medium;">Visit web site</a>
+                </h3>
+                <ul>
+                    <li>Developed a web-based calculator using HTML, CSS, and JavaScript.</li>
+                    <li>Implemented core arithmetic operations (addition, subtraction, multiplication, and division).</li>
+                    <li>Designed a responsive UI compatible with different devices.</li>
+                    <li>Added interactive features like keyboard support, clear/reset functionality, and real-time calculation.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleNav() {
+            const nav = document.querySelector('.items');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

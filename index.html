@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+    <style>
+        @media (max-width:425px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#" class="brand">Balasai <label>Lekkala</label></a>
+            <center style="align-items:center ; color: black; font-size: 20px; font-weight: bolder;">
+                <h2>MY PORTFOLIO</h2>
+            </center>
+            <button class="shortcut-btn" onclick="toggleNav()">☰ Menu</button>
+            <nav class="items">
+                <ul>
+
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./cerficates.html">Certificates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="info">
+            <div class="about-section">
+                <i class="fa-solid fa-address-card"></i>       
+                <p>I'm a passionate B.Tech student specializing in Artificial Intelligence & Machine Learning. 
+                    With a strong foundation in multiple programming languages and a keen interest in software development,
+                    I'm constantly working on projects that challenge and enhance my skills. 
+                </p>
+
+            </div>
+        </div>
+        <div class="info1">
+            <div class="technical_skills">
+                <i class="fa fa-laptop-code"></i>
+                <div class="container">
+                    <div class="badge">Java</div>
+                    <div class="badge">Python</div>
+                    <div class="badge">C</div>
+                    <div class="badge">Nodejs</div>
+                    <div class="badge">RestAPI</div>
+                    <div class="badge">Problem Solving</div>
+                    <div class="badge">HTML/CSS</div>
+                    <div class="badge">JavaScript</div>
+                    <div class="badge">postgresSQL</div>
+                </div>
+  
+            </div>
+        </div>
+        <div class="info2">
+            <div class="education">
+            <i class="fa fa-graduation-cap"></i>
+            <p>
+                Bachelor of Technology<br>
+                Artificial Intelligence & Machine Learning<br>
+            
+                Currently Pursuing</p>
+        </div>
+        </div>
+    </main>
+
+   
+
+    <script>
+        function toggleNav() {
+            const nav = document.querySelector('.items');
+            nav.classList.toggle('show');
+        }
+    </script>
+    
+</body>
+
+</html>

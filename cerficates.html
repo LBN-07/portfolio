@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>My Certificates</title>
+    <style>
+        /* General Styling */
+.certificate-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Styling for certificate links */
+.certificate-container a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-container a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Adding some spacing between links */
+.certificate-container a:not(:last-child) {
+    margin-bottom: 10px;
+}
+@media (max-width:425px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#" class="brand">Balasai <label>Lekkala</label></a>
+            <center style="align-items:center ; color: black; font-size: 20px; font-weight: bolder;">
+                <h2>MY PORTFOLIO</h2>
+            </center>
+            <button class="shortcut-btn" onclick="toggleNav()">☰ Menu</button>
+            <nav class="items">
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./cerficates.html">Certificates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <h1 align="center">My Certificates</h1>
+    <div class="certificate-container">
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:9fcf5007-6c5a-49a6-809a-90e4f5e3f15c?viewer%21megaVerb=group-discover" target="_blank">
+            🎓 View My Hackathon Certificate
+        </a>
+
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:2de648e6-24e3-4932-8bb0-dfb53c96c8f9?viewer%21megaVerb=group-discover" target="_blank">
+            🏆 View My BBC (Brand Buster) Certificate
+        </a>
+
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:967fa4e1-f8bf-4010-b56a-737aad2ba9b6?viewer%21megaVerb=group-discover" target="_blank">
+            🎬 View My Flick Trivia Certificate
+        </a>
+
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:48faed8c-826a-439f-8789-6d0dcf7265bf" target="_blank">
+            💻 View My C Programming Language Certificate
+        </a>
+  
+        <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-f227ea2d-f0c5-41ea-a396-dad744e57fab.jpg" target="_blank">
+           🎓 Full-Stack Web Development Certificate (Udemy) 
+        </a>  
+        <a href="https://www.hackerrank.com/certificates/1d27dee1a9c3" target="_blank">
+           🐍 Python (Basic) - HackerRank 
+        </a>  
+        <a href="https://www.hackerrank.om/certificates/fee13c1626f1" target="_blank"> 
+            📊 SQL (Intermediate) - HackerRank 
+        </a>
+        
+    </div>
+
+    <script>
+        function toggleNav() {
+            const nav = document.querySelector('.items');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

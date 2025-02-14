@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>About - Portfolio</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .shortcut-btn {
+                display: block;
+            }
+
+            /* .items {
+                display: none;
+                flex-direction: column;
+                background: lightgreen;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            } */
+
+            .items.show {
+                display: flex;
+            }
+
+            .items ul {
+                flex-direction: column;
+            }
+
+            .items ul li {
+                margin: 10px 0;
+            }
+        }
+        @media (max-width:425px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+        .about-section, .summary {
+            margin: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section i, .summary i {
+            font-size: 40px;
+            color: lightgreen;
+            margin-right: 10px;
+        }
+
+        .summary {
+            font-size: 16px;
+            color: #333;
+            text-align: left;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .summary ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .summary ul li {
+            margin: 10px 0;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* LinkedIn Icon */
+        .linkedin {
+            padding: 30px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .linkedin a {
+            display: inline-block;
+            background: #09c218;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 24px;
+            transition: 0.3s;
+        }
+
+        .linkedin a:hover {
+            background: #005f8d;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="brand">Balasai <label>Lekkala</label></a>
+            <center style="align-items:center ; color: black; font-size: 20px; font-weight: bolder;">
+                <h2>MY PORTFOLIO</h2>
+            </center>
+            <button class="shortcut-btn" onclick="toggleNav()">☰ Menu</button>
+            <nav class="items">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./certificates.html">Certificates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="info">
+            <div class="about-section">
+                <i class="fa-solid fa-address-card"></i>       
+                <p>I'm a passionate B.Tech student specializing in Artificial Intelligence & Machine Learning. 
+                    With a strong foundation in multiple programming languages and a keen interest in software development,
+                    I'm constantly working on projects that challenge and enhance my skills. 
+                </p>
+            </div> 
+            <div class="summary">
+                <i class="fa-solid fa-rectangle-list"></i><br>
+                <h3></h3>
+                <ul>
+                    <li>Strong focus on user experience and performance optimization</li>
+                    <li>Proficient in HTML, CSS, JavaScript, Node.js, and PostgreSQL</li>
+                    <li>Full Stack Web Developer with expertise in front-end and back-end technologies</li>
+                    <li>Continuously learning and adapting to new web development trends</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleNav() {
+            const nav = document.querySelector('.items');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
